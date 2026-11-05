@@ -1,0 +1,30 @@
+# 代码量统计工具 —— 排除清单示例
+#
+# 用法：把本文件复制到要统计的目录根部，改名为 .clocignore
+#      然后在界面上选「手写口径（按 .clocignore 排除生成内容）」。
+#
+# 每行一条规则，规则之间可以用空行分隔，以 # 开头的行是注释：
+#   .html                        裸扩展名：跳过所有 .html
+#   *.md                         通配扩展名：跳过所有 .md
+#   data.sql                     文件名：跳过任何目录下叫 data.sql 的文件
+#   gen_report.py                同上
+#   教务管理系统/tools/gen_er.py  相对路径：只跳过这一个文件
+#   output/                      目录前缀：跳过整个 output 目录
+#
+# 下面这份是“只算手写代码”的常用组合，按项目增删：
+
+# ① 文档一律不算（AI 或自动生成的说明、报告、记忆卡）
+.md
+
+# ② 由脚本生成的测试数据
+data.sql
+
+# ③ 生成脚本本身也不算手写
+gen_report.py
+gen_data.py
+gen_er.py
+gen_accounts.py
+
+# ④ 运行产物与缓存
+output/
+__pycache__/

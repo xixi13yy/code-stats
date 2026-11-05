@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# æœ¬åœ°ç»Ÿè®¡ç»“æžœ
+*.csv
+!_test_*.csv
+
+# ç¼–è¾‘å™¨ / ç³»ç»Ÿ
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ÊäÈë·¨/»·¾³ÈÕÖ¾
+debug.log
+*.log
+
